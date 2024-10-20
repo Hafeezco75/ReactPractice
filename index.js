@@ -23,7 +23,7 @@ h1.className = "header"
 /*document.getElementsById("root").append()*/
 
 import React from 'react'
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
 
 function NavBar() {
@@ -47,6 +47,8 @@ const element = <h1>Welcome to our Blog, how can I help you?</h1>
 console.log(element)
 
 
-ReactDOM.render(NavBar,  document.getElementById("root"))
+/*ReactDOM.create(document.getElementById("root")).render(NavBar)*/
 
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(NavBar)
 
