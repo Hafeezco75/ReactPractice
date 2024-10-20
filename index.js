@@ -47,10 +47,6 @@ const element = <h1>Welcome to our Blog, how can I help you?</h1>
 console.log(element)
 
 
-ReactDOM.r(
-  <NavBar/>,
-  /*page,*/
-  document.getElementById("root")
-)
+ReactDOM.render(NavBar,  document.getElementById("root"))
 
 
